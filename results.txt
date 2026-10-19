@@ -1,0 +1,464 @@
+
+=================================================================
+Date: 2026-10-19 13:59:47
+Experiment: Zero-Shot Prompting
+-----------------------------------------------------------------
+PROMPT:
+Explain Artificial Intelligence in simple English for a college student. Give a definition and 3 examples.
+
+MODEL RESPONSE:
+Here is a simple, clear explanation of Artificial Intelligence (AI) tailored for a college student.
+
+---
+
+### What is Artificial Intelligence?
+
+**Definition:** 
+**Artificial Intelligence (AI)** refers to computer systems or machines designed to simulate human intelligence. This means creating software that can learn from experience, recognize patterns, solve problems, and make decisions—tasks that traditionally required human thinking.
+
+### How Does It Work in Simple Terms?
+Normally, computers only do what humans explicitly program them to do step-by-step (e.g., *"If the user clicks this button, open that page"*). 
+
+AI is different. Instead of writing rules for every single situation, engineers feed the computer massive amounts of data and give it algorithms (mathematical recipes). The computer analyzes this data, spots patterns, and teaches itself how to achieve a goal. The more data it gets, the better it becomes at its job.
+
+---
+
+### 3 Real-World Examples
+
+#### 1. Content Recommendation Systems (e.g., Spotify, Netflix, TikTok)
+* **What it does:** Predicts what song, video, or movie you want to see next based on your past behavior.
+* **The AI behind it:** It uses **Machine Learning**. The system analyzes thousands of data points—what you watched, what you skipped, how long you stayed on a video, and what users with similar tastes liked—to build a personalized feed just for you.
+
+#### 2. Large Language Models and Chatbots (e.g., ChatGPT)
+* **What it does:** Understands questions written in plain English and generates human-like responses, essays, or code.
+* **The AI behind it:** It uses **Natural Language Processing (NLP)**. The AI was trained on a vast library of internet text, learning the statistical relationships between words. When you type a prompt, it predicts the most logical and helpful words to respond with, almost like super-advanced auto-complete.
+
+#### 3. Navigation and Route Optimization (e.g., Google Maps)
+* **What it does:** Calculates the fastest way to get to your destination and updates the route in real-time.
+* **The AI behind it:** It processes real-time data from millions of smartphones on the road. The AI analyzes historical traffic patterns alongside current conditions (like construction, weather, or accidents) to predict traffic flow and dynamically suggest the quickest detour.
+
+---
+
+### Key Takeaway
+AI is not a conscious robot with feelings; it is essentially **advanced statistics and pattern recognition at scale**, allowing machines to perform complex tasks that mimic human reasoning.
+
+=================================================================
+Date: 2026-10-19 14:04:22
+Experiment: Few-Shot Prompting
+-----------------------------------------------------------------
+PROMPT:
+Classify each review as Positive, Negative, or Neutral.
+
+Examples:
+Review: "The product is excellent!"
+Sentiment: Positive
+
+Review: "The service was terrible."
+Sentiment: Negative
+
+Review: "The package arrived today."
+Sentiment: Neutral
+
+Now classify:
+Review: "The application is very useful and easy to use."
+Sentiment:
+
+MODEL RESPONSE:
+Sentiment: Positive
+
+=================================================================
+Date: 2026-10-19 14:05:21
+Experiment: Reasoning-Style Prompting
+-----------------------------------------------------------------
+PROMPT:
+Solve this problem carefully.
+A student studies 2 hours on Monday, 3 hours on Tuesday,
+and 4 hours on Wednesday. What is the total study time
+and average study time per day?
+
+Show the calculation steps and final answer clearly.
+
+MODEL RESPONSE:
+Here are the step-by-step calculations and the final answer:
+
+### **Step 1: Calculate the Total Study Time**
+Add the hours studied on each day:
+$$\text{Total Study Time} = 2\text{ hours (Monday)} + 3\text{ hours (Tuesday)} + 4\text{ hours (Wednesday)}$$
+$$\text{Total Study Time} = 9\text{ hours}$$
+
+---
+
+### **Step 2: Calculate the Average Study Time Per Day**
+Divide the total study time by the number of days ($3$ days):
+$$\text{Average Study Time} = \frac{\text{Total Study Time}}{\text{Number of Days}}$$
+$$\text{Average Study Time} = \frac{9\text{ hours}}{3\text{ days}} = 3\text{ hours per day}$$
+
+---
+
+### **Final Answer:**
+* **Total Study Time:** **$9$ hours**
+* **Average Study Time:** **$3$ hours per day**
+
+=================================================================
+Date: 2026-10-19 14:07:27
+Experiment: Text Summarization
+-----------------------------------------------------------------
+PROMPT:
+Summarize this paragraph in exactly 3 bullet points:
+"Artificial Intelligence enables computers to perform tasks
+that normally require human intelligence. Machine learning
+allows systems to learn patterns from data. AI is used in
+healthcare, education, transportation, and agriculture.
+Responsible development is important for privacy, fairness,
+and safety."
+
+MODEL RESPONSE:
+* AI enables computers to perform tasks typically requiring human intelligence, using machine learning to identify patterns in data.
+* It is applied across various key sectors, including healthcare, education, transportation, and agriculture.
+* Responsible development is essential to address critical concerns regarding privacy, fairness, and safety.
+
+=================================================================
+Date: 2026-10-19 14:08:00
+Experiment: Translation
+-----------------------------------------------------------------
+PROMPT:
+Translate this sentence into Telugu:
+"Technology can make education more accessible to everyone."
+Give the Telugu translation and a simple English meaning.
+
+MODEL RESPONSE:
+Here is the translation of the sentence into Telugu:
+
+**Telugu Translation:**
+సాంకేతికత విద్యను అందరికీ మరింత అందుబాటులోకి తీసుకురాగలదు. 
+*(Transliteration: Sāṅkētikata vidyanu andarīkī marinta andubāṭulōki tīsukurāgaladu.)*
+
+---
+
+**Simple English Meaning:**
+Technology helps make learning and education easy to get for all people.
+
+=================================================================
+Date: 2026-10-19 14:08:23
+Experiment: Text Classification
+-----------------------------------------------------------------
+PROMPT:
+Classify the following message as SPAM or NOT SPAM.
+Message: "Congratulations! You have won a prize.
+Click here to claim your reward now."
+
+Return:
+Category:
+Reason:
+
+MODEL RESPONSE:
+Category: SPAM
+
+Reason: The message exhibits classic phishing and scam indicators, including an unsolicited claim that the recipient has won a prize, a generic "click here" link, and a sense of urgency ("now") designed to trick users into clicking potentially malicious links.
+
+=================================================================
+Date: 2026-10-19 14:09:12
+Experiment: Creative Writing
+-----------------------------------------------------------------
+PROMPT:
+Write a short motivational story of about 150 words
+about a college student who learns Python and builds
+a useful project. Include a title and a positive ending.
+
+MODEL RESPONSE:
+**The Power of a Single Script**
+
+Leo stared at the blinking cursor, intimidated by the sea of red syntax errors. As a sophomore with zero technical background, learning Python felt like deciphering an ancient language. Yet, watching cafeteria trays of untouched food get discarded every evening sparked a quiet determination inside him.
+
+Instead of walking away, Leo committed. Late nights fueled by cold coffee gradually turned into breakthroughs: variables made sense, loops clicked, and functions finally flowed. 
+
+Three months later, he launched "CampusBites"—a lightweight Python program that mapped surplus food from campus events and alerted hungry, budget-strapped students in real time. 
+
+During launch week alone, the tool rescued over two hundred meals. Standing in the student union, Leo overheard two freshmen excitedly discussing how the app had just saved their dinner. A warm wave of pride washed over him. 
+
+Code was no longer a wall of symbols; it was a superpower to heal his community—and he was only just getting started.
+
+=================================================================
+Date: 2026-10-19 14:10:03
+Experiment: Code Generation
+-----------------------------------------------------------------
+PROMPT:
+Write a Python function that checks whether a number
+is prime. Include clear comments and 3 example test cases.
+Explain how the function works briefly.
+
+MODEL RESPONSE:
+Here is the Python function along with comments, test cases, and a brief explanation.
+
+### Python Code
+
+```python
+def is_prime(n: int) -> bool:
+    """Checks if a given integer n is a prime number.
+
+    Returns True if prime, False otherwise.
+    """
+    # Numbers less than or equal to 1 are not prime
+    if n <= 1:
+        return False
+
+    # 2 is the smallest and only even prime number
+    if n == 2:
+        return True
+
+    # Exclude all other even numbers immediately
+    if n % 2 == 0:
+        return False
+
+    # Check for odd factors up to the square root of n.
+    # We step by 2 to skip even numbers.
+    limit = int(n**0.5) + 1
+    for i in range(3, limit, 2):
+        if n % i == 0:
+            return False  # Found a divisor, so it's not prime
+
+    return True  # No divisors found, so it is prime
+
+
+# --- 3 Example Test Cases ---
+
+# Test Case 1: A standard prime number
+print(f"Is 29 prime? {is_prime(29)}")  # Expected: True
+
+# Test Case 2: A composite (non-prime) number
+print(f"Is 15 prime? {is_prime(15)}")  # Expected: False
+
+# Test Case 3: An edge case (1 is not prime)
+print(f"Is 1 prime?  {is_prime(1)}")  # Expected: False
+```
+
+---
+
+### How It Works
+
+1. **Edge Case Elimination**: 
+   - Any number $\le 1$ is immediately returned as `False` because primes must be greater than 1.
+   - The number `2` is returned as `True` (it is the only even prime).
+   - Any other even number is ruled out using `n % 2 == 0`.
+
+2. **Square Root Optimization ($\sqrt{n}$)**:
+   - If a number $n$ has a factor larger than $\sqrt{n}$, it must have a matching factor smaller than $\sqrt{n}$. Therefore, the loop only needs to check numbers up to $\lfloor\sqrt{n}\rfloor$, drastically reducing execution time for large numbers.
+
+3. **Odd Steps**:
+   - Since even numbers are already ruled out, the loop starts at `3` and increments by `2` (`range(3, limit, 2)`), testing only odd potential factors. If none evenly divide $n$, the number is prime.
+
+=================================================================
+Date: 2026-10-19 14:11:45
+Experiment: Structured Output
+-----------------------------------------------------------------
+PROMPT:
+Return a valid JSON object about a fictional student
+with these fields:
+name, course, skills (list), and beginner_project.
+Return only valid JSON without Markdown formatting.
+
+MODEL RESPONSE:
+{
+  "name": "Elena Rostova",
+  "course": "Web Development Bootcamp",
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Basic JavaScript",
+    "Git"
+  ],
+  "beginner_project": "Interactive Recipe Book Webpage"
+}
+
+=================================================================
+Date: 2026-10-19 14:13:15
+Experiment: Role-Based Prompting
+-----------------------------------------------------------------
+PROMPT:
+Act as a friendly Python tutor for a college beginner.
+Explain Python lists using simple language.
+Include one small code example and three key points.
+
+MODEL RESPONSE:
+Hey there! Welcome to the world of Python. Don't worry if programming feels a bit overwhelming at first—we're going to take it one step at a time, and you've got this!
+
+### What is a Python List?
+
+Think of a **list** just like a real-life list you might write on a piece of paper—like a grocery list, a to-do list, or a playlist of your favorite songs. 
+
+In Python, a list is simply a way to store a collection of items together in a single place. We make a list by putting our items inside **square brackets `[]`**, separated by commas.
+
+---
+
+### Code Example
+
+Here is a quick example of how you can create and use a list in Python:
+
+```python
+# Creating a list of snacks for a study session
+snacks = ["chips", "apple", "chocolate"]
+
+# Python counts starting at 0, so snacks[0] gives the first item
+print(snacks[0])  # Output: chips
+
+# We can easily add a new snack to our list
+snacks.append("popcorn")
+
+print(snacks)  # Output: ['chips', 'apple', 'chocolate', 'popcorn']
+```
+
+---
+
+### 3 Key Points to Remember
+
+1. **They have a specific order (Indexing):** Python remembers the order in which you put things into a list. Just remember the fun quirk: **Python starts counting at `0`**, so the very first item is always at index `0`.
+2. **They are changeable (Mutable):** You can update a list anytime! You can add new items, take items out, or swap an old item for a new one without having to start over.
+3. **They can hold anything:** A list can hold words (strings), numbers (integers), or even a mix of both all inside the same bracket!
+
+How does that feel so far? Let me know if you want to try writing one together!
+
+=================================================================
+Date: 2026-10-19 14:16:09
+Experiment: Zero-shot vs Few-shot Comparison
+-----------------------------------------------------------------
+PROMPT:
+ZERO-SHOT PROMPT:
+
+Classify this review as Positive, Negative, or Neutral.
+Review: "The delivery was late, but the product works well."
+Return the category and a brief reason.
+
+FEW-SHOT PROMPT:
+
+Classify the review as Positive, Negative, or Neutral.
+
+Examples:
+Review: "Amazing quality and fast delivery."
+Category: Positive
+
+Review: "Poor quality and very disappointing."
+Category: Negative
+
+Review: "The parcel arrived on Tuesday."
+Category: Neutral
+
+Now classify:
+Review: "The delivery was late, but the product works well."
+Return the category and a brief reason.
+
+MODEL RESPONSE:
+ZERO-SHOT OUTPUT:
+**Category:** Neutral (Mixed)
+
+**Reason:** The review contains both a negative aspect (delayed delivery) and a positive aspect (the product functions well), resulting in an overall balanced sentiment.
+
+FEW-SHOT OUTPUT:
+**Category:** Positive
+
+**Reason:** Although the review mentions a negative experience with late delivery, the conjunction "but" shifts the final emphasis to customer satisfaction with the product's performance ("works well"), making the overall sentiment lean positive. 
+
+*(Note: Depending on whether a system strictly treats mixed/balanced feedback as "Neutral," it can also be considered Neutral, but the core product satisfaction gives it a net positive tone.)*
+
+=================================================================
+Date: 2026-10-19 14:36:48
+Experiment: Zero-Shot Prompting
+-----------------------------------------------------------------
+PROMPT:
+Explain Artificial Intelligence in simple English for a college student. Give a definition and 3 examples.
+
+MODEL RESPONSE:
+### What is Artificial Intelligence?
+
+**Artificial Intelligence (AI)** is a branch of computer science focused on building software and machines that can perform tasks that typically require human intelligence. 
+
+Instead of following a rigid, step-by-step set of manual instructions (like a traditional calculator), an AI system is trained on massive amounts of data. It learns to recognize patterns, adapt to new inputs, make decisions, and solve problems on its own. 
+
+In short: **Traditional software does what a human explicitly tells it to do; AI figures out how to do a task by learning from examples.**
+
+---
+
+### 3 Real-World Examples
+
+#### 1. Predictive Navigation (e.g., Google Maps)
+* **What it does:** Suggests the fastest route and updates your arrival time dynamically.
+* **How AI works here:** Google Maps doesn't just measure distance; it analyzes historical traffic patterns, real-time location data from millions of smartphones on the road, construction updates, and speed limits to predict traffic bottlenecks before they happen and reroute you automatically.
+
+#### 2. Recommendation Algorithms (e.g., Spotify, Netflix, or TikTok)
+* **What it does:** Curates a feed or playlist tailored specifically to your tastes.
+* **How AI works here:** The algorithm tracks your behavior—what you watch, skip, like, or replay. It compares your habits with millions of other users with similar tastes to predict what you are most likely to enjoy next, constantly refining its guesses the more you use the app.
+
+#### 3. Large Language Models (e.g., ChatGPT)
+* **What it does:** Understands, summarizes, and generates human-like text across thousands of topics.
+* **How AI works here:** The model was trained on billions of pages of text from the internet. By learning the statistical relationships between words and concepts, it can predict the most logical, helpful words to generate in response to a question—whether you're asking it to explain a physics concept, debug code, or write an email.
+
+=================================================================
+Date: 2026-10-19 14:37:18
+Experiment: Zero-Shot Comparison
+-----------------------------------------------------------------
+PROMPT:
+A student studies for 2 hours on Monday, 3 hours on Tuesday,
+and 4 hours on Wednesday. Find the total and average study time.
+
+MODEL RESPONSE:
+Here are the calculations for the total and average study time:
+
+* **Total Study Time:**
+  $$\text{Total} = 2 + 3 + 4 = \mathbf{9\text{ hours}}$$
+
+* **Average Study Time:**
+  $$\text{Average} = \frac{\text{Total Hours}}{\text{Number of Days}} = \frac{9}{3} = \mathbf{3\text{ hours per day}}$$
+
+=================================================================
+Date: 2026-10-19 14:37:39
+Experiment: Few-Shot Comparison
+-----------------------------------------------------------------
+PROMPT:
+Use the examples to solve the next problem.
+
+Example:
+Hours: 2, 4
+Total: 6 hours
+Average: 3 hours
+
+Now solve:
+A student studies 2 hours on Monday, 3 hours on Tuesday,
+and 4 hours on Wednesday. Find the total and average.
+
+MODEL RESPONSE:
+Hours: 2, 3, 4  
+**Total:** 9 hours  
+**Average:** 3 hours
+
+=================================================================
+Date: 2026-10-19 14:38:04
+Experiment: Reasoning-Style Comparison
+-----------------------------------------------------------------
+PROMPT:
+Solve carefully and show the calculations.
+A student studies 2 hours on Monday, 3 hours on Tuesday,
+and 4 hours on Wednesday.
+Calculate total study time and average per day.
+
+MODEL RESPONSE:
+Here are the step-by-step calculations:
+
+### 1. Total Study Time
+To find the total study time, add the hours studied on each day:
+
+$$\text{Total Time} = \text{Monday} + \text{Tuesday} + \text{Wednesday}$$
+$$\text{Total Time} = 2\text{ hours} + 3\text{ hours} + 4\text{ hours} = \mathbf{9\text{ hours}}$$
+
+---
+
+### 2. Average Study Time Per Day
+To find the average per day, divide the total study time by the number of days ($3$ days):
+
+$$\text{Average per day} = \frac{\text{Total Study Time}}{\text{Number of Days}}$$
+
+$$\text{Average per day} = \frac{9\text{ hours}}{3\text{ days}} = \mathbf{3\text{ hours/day}}$$
+
+---
+
+### Summary:
+* **Total study time:** $9\text{ hours}$
+* **Average study time per day:** $3\text{ hours per day}$
